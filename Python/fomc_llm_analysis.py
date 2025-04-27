@@ -4,7 +4,7 @@ import time
 
 # --- Step 1: Set your OpenAI API key ---
 client = openai.OpenAI(
-    api_key="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"  # ⚠️ Replace with your working API key
+    api_key="SD01balpPP4qjA"  # ⚠️ Replace with your working API key
 )
 
 # --- Step 2: Load your FOMC statements ---
@@ -44,7 +44,7 @@ Statement:
 
 # --- Step 4: Process each FOMC statement ---
 for idx, row in df.iterrows():
-    print(f"📄 Processing row {idx}...")  # Add live progress feedback
+    print(f"Processing row {idx}...")  # Add live progress feedback
     prompt = create_prompt(row['text'])
 
     try:
